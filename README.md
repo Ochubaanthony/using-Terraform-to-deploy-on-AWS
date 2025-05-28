@@ -20,7 +20,7 @@ ADD THE BOTH KEY
 Then enter your keys and region:
 AWS Access Key ID [None]: YOUR_ACCESS_KEY_ID
 AWS Secret Access Key [None]: YOUR_SECRET_ACCESS_KEY
-Default region name [None]: us-east-1         ← or your region
+Default region name [None]: us-east-2         ← or your region
 Default output format [None]: json
 
 
@@ -32,7 +32,7 @@ cd eks-install/
 ls
 Cd backend
 ls main.tf
-nano main.tf
+nano main.tf              edit the S3 bucket name eg stateAnthony-S3
 
 To Initialise terraform
 terraform init
@@ -49,6 +49,7 @@ Choose yes
 
 
 AWS DynamoDB and S3 bucket will be created.
+change from backend to 
 cd ..
 ls main.tf
 nano main.tf
